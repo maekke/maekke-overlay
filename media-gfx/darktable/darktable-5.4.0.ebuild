@@ -98,9 +98,8 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-3.4.0_jsonschema-automagic.patch
 	"${FILESDIR}"/${PN}-3.4.1_libxcf-cmake.patch
 	"${FILESDIR}"/${PN}-4.2.1_cmake-musl.patch
-
 	"${FILESDIR}/${PN}-5.0.1-no-Werror.patch"
-	#"${FILESDIR}/${PN}-5.0.1-fix-c-linkage-gcc-15.patch"
+	"${FILESDIR}/${P}-gdk-20034.patch"
 )
 
 pkg_pretend() {
