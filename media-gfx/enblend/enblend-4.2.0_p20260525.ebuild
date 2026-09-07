@@ -5,10 +5,10 @@ EAPI=8
 
 inherit cmake
 
+SNAPSHOT="enblend-code-28280bde8517c524d4b7893647f98d858a8a73d7"
+
 DESCRIPTION="Image Blending with Multiresolution Splines"
 HOMEPAGE="http://enblend.sourceforge.net/"
-#SRC_URI="https://dev.gentoo.org/~dilfridge/distfiles/${P}.tar.xz"
-SNAPSHOT="enblend-code-28280bde8517c524d4b7893647f98d858a8a73d7"
 SRC_URI="https://sourceforge.net/code-snapshots/hg/e/en/enblend/code/${SNAPSHOT}.zip"
 
 S=${WORKDIR}/${SNAPSHOT}
@@ -19,6 +19,7 @@ KEYWORDS="amd64 arm64 x86"
 IUSE="cpu_flags_x86_sse2 doc openmp tcmalloc"
 
 BDEPEND="
+	app-arch/unzip
 	sys-apps/help2man
 	virtual/pkgconfig
 	doc? (
