@@ -4,7 +4,7 @@
 EAPI=8
 
 WX_GTK_VER="3.2-gtk3"
-PYTHON_COMPAT=( python3_{11..14} python3_{13,14}t )
+PYTHON_COMPAT=( python3_{11..15} python3_{13..15}t )
 
 inherit mercurial python-single-r1 wxwidgets cmake xdg toolchain-funcs
 
